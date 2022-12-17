@@ -102,10 +102,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       ]);
                 }),
           ),
-          const Expanded(
-              child: WebView(
-            initialUrl: 'http://www.techienutzitservices.com/',
-          )),
+          // const Expanded(
+          //     child: WebView(
+          //   initialUrl: 'http://www.techienutzitservices.com/',
+          // )),
         ]),
       ),
       floatingActionButton: GestureDetector(
@@ -139,11 +139,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   Future<void> _createDynamicLink() async {
     final DynamicLinkParameters parameters = DynamicLinkParameters(
-      uriPrefix: 'https://croudoperationapp.page.link',
+      uriPrefix: 'https://refferaldynamic.page.link',
       link: Uri.parse(
-          "https://virendeep.com/referral?code=12345&userId=${box.read('uuid')}"),
+          "https://www.refferaldynamic.com/referral?code=12345&userId=${box.read('uuid')}"),
       androidParameters: const AndroidParameters(
-        packageName: 'com.example.deep_link_demo_app',
+        packageName: 'com.service.deep_link_demo_app',
         minimumVersion: 0,
       ),
     );
